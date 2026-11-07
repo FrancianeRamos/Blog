@@ -1,134 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Pessoal | Franciane</title>
+    <title>Início | Blog da Franciane</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
         <nav class="navbar">
-            <h1 class="logo">FranBlog</h1>
+            <a href="index.html" class="logo">FranBlog</a>
             <ul class="nav-links">
-                <li><a href="#apresentacao">Início</a></li>
-                <li><a href="#trajetoria">Minha Trajetória</a></li>
-                <li><a href="#resenhas">Resenhas</a></li>
+                <li><a href="index.html" class="ativo">Início</a></li>
+                <li><a href="sobre.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="filmes.html">Filmes & Séries</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="apresentacao" class="secao destaque">
-            <div class="conteudo-apresentacao">
-                <div class="texto-apresentacao">
-                    <h2>Olá, eu sou a Franciane!</h2>
-                    <p>Bem-vindos ao meu blog. Este espaço foi criado como projeto final para unir o que aprendi nas
-                        aulas de HTML/CSS e Criação de Conteúdo Web. Aqui eu compartilho um pouco sobre quem eu sou,
-                        minha jornada na área de tecnologia e as obras que acompanho nas horas vagas.</p>
-                </div>
-                <div class="foto-apresentacao">
-                    <img src="imagens/0012.jpg" alt="Foto de perfil da Franciane">
-                </div>
-            </div>
+        <section class="secao destaque">
+            <h2>Bem-vindos ao meu espaço!</h2>
+            <p>Navegue pelos cards abaixo para conhecer um pouco mais sobre o meu trabalho, estudos e hobbies.</p>
         </section>
 
-        <section id="trajetoria" class="secao">
-            <h2>Minha Trajetória na Tecnologia</h2>
+        <section class="secao">
             <div class="cards-container">
-
                 <div class="card">
-                    <h3>Análise e Desenvolvimento de Sistemas - AMS</h3>
-                    <p>Já sou formada em Análise e Desenvolvimento de Sistemas - AMS (fevereiro de 2026)! Toda a base
-                        algorítmica, de modelagem e desenvolvimento que construí nesse curso me ajuda diariamente nos
-                        projetos práticos de hoje.</p>
+                    <h3>Quem sou eu?</h3>
+                    <p>Descubra mais sobre mim, minha rotina na Secretaria Administrativa da Fatec e meus hobbies.</p>
+                    <a href="sobre.html" class="btn">Leia mais</a>
                 </div>
-
                 <div class="card">
-                    <h3>Sistemas para Internet</h3>
-                    <p>Atualmente estou cursando Sistemas para Internet na Fatec Jales. Tem sido uma experiência
-                        incrível aprender novas ferramentas e aprofundar meus conhecimentos em desenvolvimento web e
-                        criação de conteúdo.</p>
+                    <h3>Minha Trajetória</h3>
+                    <p>Entenda a diferença entre o curso de ADS (AMS) que já concluí e o de Sistemas para Internet que curso agora.</p>
+                    <a href="formacao.html" class="btn">Ver Formação</a>
                 </div>
-
                 <div class="card">
-                    <h3>Experiência Profissional</h3>
-                    <p>Atuo como Jovem Aprendiz na Secretaria Acadêmica da Fatec Jales. Meu trabalho envolve a gestão e
-                        digitalização de prontuários, operações administrativas nos sistemas SEI e SIGA, e a criação do
-                        Manual de Processos padronizado da secretaria.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Projetos e Modelagem Visual</h3>
-                    <p>Desenvolvi projetos de software estruturados (como o sistema LUMENSYS) e tenho forte facilidade
-                        com documentação técnica. Utilizo ferramentas como Canva, Miro, Draw.io e Mermaid para construir
-                        fluxogramas e manuais visuais interativos.</p>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="resenhas" class="secao destaque-invertido">
-            <h2>O Que Tenho Assistido</h2>
-            <p class="subtitulo">Minhas opiniões sinceras, especialmente sobre terror e suspense.</p>
-
-            <div class="cards-container">
-                <div class="card-resenha">
-                    <span class="nota">Nota: 9/10 ⭐</span>
-                    <h3>A Maldição da Residência Hill (Série)</h3>
-                    <p><strong>Gênero:</strong> Terror / Suspense</p>
-                    <p><strong>O que achei:</strong> A forma como a série mistura o terror psicológico com o drama
-                        familiar é impecável. A ambientação é incrível e a história prende do início ao fim.</p>
-                </div>
-
-                <div class="card-resenha">
-                    <span class="nota">Nota: 8/10 ⭐</span>
-                    <h3>Hereditário (Filme)</h3>
-                    <p><strong>Gênero:</strong> Terror Psicológico</p>
-                    <p><strong>O que achei:</strong> Um filme que deixa uma sensação de desconforto constante. A atuação
-                        é brilhante e o final é surpreendente, perfeito para quem gosta de um terror que mexe com a
-                        cabeça.</p>
-                </div>
-                <div class="card-resenha">
-                    <span class="nota">Nota: 10/10 ⭐</span>
-                    <h3>Corra! (Filme)</h3>
-                    <p><strong>Gênero:</strong> Suspense / Terror Psicológico</p>
-                    <p><strong>O que achei:</strong> Um roteiro genial que cria tensão do começo ao fim. A forma como o
-                        suspense é construído te deixa grudado na tela, sem saber em quem confiar.</p>
-                </div>
-
-                <div class="card-resenha">
-                    <span class="nota">Nota: 9/10 ⭐</span>
-                    <h3>Dark (Série)</h3>
-                    <p><strong>Gênero:</strong> Suspense / Mistério</p>
-                    <p><strong>O que achei:</strong> Uma série complexa que exige muita atenção, mas recompensa cada
-                        segundo. O clima sombrio e os mistérios de dar nó na cabeça são perfeitos.</p>
-                </div>
-
-                <div class="card-resenha">
-                    <span class="nota">Nota: 8.5/10 ⭐</span>
-                    <h3>Invocação do Mal (Filme)</h3>
-                    <p><strong>Gênero:</strong> Terror Sobrenatural</p>
-                    <p><strong>O que achei:</strong> Um clássico moderno do terror. Os sustos não são gratuitos, a
-                        direção é afiada e a atmosfera de tensão é incrivelmente imersiva do início ao fim.</p>
-                </div>
-
-                <div class="card-resenha">
-                    <span class="nota">Nota: 8/10 ⭐</span>
-                    <h3>O Homem Invisível (Filme)</h3>
-                    <p><strong>Gênero:</strong> Suspense Psicológico</p>
-                    <p><strong>O que achei:</strong> A angústia deste filme é palpável. O diretor consegue criar uma
-                        atmosfera onde você passa a ter medo dos espaços vazios na tela. Muito angustiante.</p>
+                    <h3>Terror e Suspense</h3>
+                    <p>Confira minhas resenhas, notas e indicações visuais dos filmes e séries que mais gostei de assistir.</p>
+                    <a href="filmes.html" class="btn">Acessar Resenhas</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Desenvolvido por Franciane - Projeto Final</p>
+        <p>&copy; 2026 Desenvolvido por Franciane - Blog</p>
     </footer>
 </body>
-
 </html>
