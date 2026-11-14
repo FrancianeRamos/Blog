@@ -1,3 +1,4 @@
+/* Variáveis de cores */
 :root {
     --lilas-claro: #E6E6FA;
     --lilas-medio: #C8A2C8;
@@ -6,6 +7,7 @@
     --preto: #1A1A1A;
 }
 
+/* Reset básico e estilos globais */
 * {
     margin: 0;
     padding: 0;
@@ -13,8 +15,9 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Estilos do corpo e layout principal */
 body {
-    background-color: var(--branco);
+    background-color: var(--branco); /*"var" permite usar as variáveis definidas no :root*/
     color: var(--preto);
     line-height: 1.6;
     display: flex;
@@ -22,6 +25,7 @@ body {
     min-height: 100vh;
 }
 
+/* Estilos do cabeçalho e navegação */
 header {
     background-color: var(--preto);
     position: sticky;
@@ -30,25 +34,29 @@ header {
     box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
+/* Navbar e links de navegação */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 5%;
+    padding: 1.2rem 5%; /*"rem" é relativo ao tamanho da fonte raiz, e "%" é relativo ao tamanho do elemento pai*/
 }
 
+/* Logo e links de navegação */
 .logo {
     color: var(--lilas-medio);
     font-size: 1.8rem;
     text-decoration: none;
 }
 
+/* Estilos dos links de navegação */
 .nav-links {
     list-style: none;
     display: flex;
     gap: 2rem;
 }
 
+/* Estilos dos links de navegação */
 .nav-links a {
     color: var(--branco);
     text-decoration: none;
@@ -58,30 +66,36 @@ header {
     transition: all 0.3s ease;
 }
 
+/* Efeito hover e estado ativo para links de navegação */
 .nav-links a:hover, .nav-links a.ativo {
     background-color: var(--lilas-escuro);
     color: var(--branco);
 }
 
+/* Estilos do conteúdo principal */
 main {
     flex: 1;
 }
 
+/* Estilos das seções */
 .secao {
     padding: 4rem 5%;
     text-align: center;
 }
 
+/* Estilos dos títulos das seções */
 .secao h2 {
     color: var(--lilas-escuro);
     margin-bottom: 2rem;
     font-size: 2.2rem;
 }
 
+/* Estilos dos destaques */
 .destaque { background-color: var(--lilas-claro); }
 .destaque-invertido { background-color: var(--preto); color: var(--branco); }
 .destaque-invertido h2 { color: var(--lilas-medio); }
 
+/* Estilos dos subtítulos */
 .subtitulo {
     margin-bottom: 3rem; 
     font-style: italic;
@@ -89,6 +103,7 @@ main {
     color: inherit;
 }
 
+/* Estilos dos cards e container de cards */
 .cards-container {
     display: flex;
     justify-content: center;
@@ -96,6 +111,7 @@ main {
     flex-wrap: wrap;
 }
 
+/* Estilos dos cards e resenhas */
 .card, .card-resenha {
     background-color: var(--branco);
     color: var(--preto);
@@ -108,22 +124,25 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Efeito hover para cards e resenhas */
 .card:hover, .card-resenha:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(147, 112, 219, 0.4);
 }
 
+/* Estilos das imagens de filmes */
 .imagem-filme {
     width: 100%;
     height: 400px;
-    object-fit: cover;
+    object-fit: cover; /* Mantém a proporção da imagem e corta o excesso */
     border-radius: 5px;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; /*"rem" é relativo ao tamanho da fonte raiz */
 }
 
+/* Estilos dos títulos e descrições de filmes */
 .btn {
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 1rem; /*"rem" é relativo ao tamanho da fonte raiz */
     padding: 0.6rem 1.5rem;
     background-color: var(--lilas-escuro);
     color: var(--branco);
@@ -133,23 +152,27 @@ main {
     transition: background 0.3s, transform 0.2s;
 }
 
+/* Efeito hover para botões */
 .btn:hover {
     background-color: var(--preto);
     transform: scale(1.05);
 }
 
+/* Estilos do conteúdo de apresentação */
 .conteudo-apresentacao {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 3rem; /* Espaçamento entre a foto e o texto */
     max-width: 1000px;
     margin: 0 auto;
 }
 
+/* Estilos do texto de apresentação */
 .texto-apresentacao { flex: 1; text-align: left; }
 .texto-apresentacao h2 { text-align: left; }
 
+/* Estilos da foto de apresentação */
 .foto-apresentacao img {
     width: 280px;
     height: 280px;
@@ -160,13 +183,15 @@ main {
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
+/* Estilos do rodapé */
 footer {
     background-color: var(--preto);
     color: var(--lilas-claro);
     text-align: center;
-    padding: 1.5rem;
+    padding: 1.5rem; /*"rem" é relativo ao tamanho da fonte raiz */
 }
 
+/* Estilos dos cards de hobbies */
 .card-hobby {
     background-color: var(--branco);
     color: var(--preto);
@@ -179,11 +204,13 @@ footer {
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
+/* Efeito hover para cards de hobbies */
 .card-hobby:hover {
     transform: translateY(-8px);
     border-color: var(--lilas-escuro);
 }
 
+/* Estilos dos ícones de hobbies */
 .icone-hobby {
     width: 65px;
     height: 65px;
@@ -196,17 +223,20 @@ footer {
     margin: 0 auto 1rem auto;
 }
 
+/* Estilos dos ícones SVG dentro dos hobbies */
 .icone-hobby svg {
     width: 32px;
     height: 32px;
 }
 
+/* Estilos dos títulos dentro dos cards de hobbies */
 .card-hobby h3 {
     margin-bottom: 0.8rem;
     color: var(--preto);
-    font-size: 1.2rem;
+    font-size: 1.2rem; /*"rem" é relativo ao tamanho da fonte raiz */
 }
 
+/* Estilos das descrições dentro dos cards de hobbies */
 @media (max-width: 768px) {
     .conteudo-apresentacao { flex-direction: column-reverse; gap: 2rem; }
     .texto-apresentacao, .texto-apresentacao h2 { text-align: center; }
